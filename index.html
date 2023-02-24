@@ -5,10 +5,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jQuery</title>
+    <style>
+        .box{
+            width: 300px;
+            height: 300px;
+            background: red;
+        }
+    </style>
 </head>
 <body>
     
+    <h3>jQuery Animate</h3>
+    <div class="box"></div><br>
+    <button class="clickToBig">Click to big</button>
+    <button class="clickToSmall">Click to small</button>
 
+    <hr>
+
+    <!--Double Click-->
+    <!-- <p>Click to hide me tag</p> -->
+
+    <p id="one-click">Click to hide me id</p>
+
+    <p class="oneClick">Click to hide me class</p>
+
+    <p id="hide1">Hide Text 1</p> <!--teks yang mau dihilangkan pake id-->
+    <div class="text1">TEXT 1</div>
+
+    <hr>
+
+    <!--Double Click-->
+    <p id="doubleClick">Hide me with double click</p>
+
+    <hr>
+
+    <!--Change Event-->
+    <h3>Change Event</h3>
+    <label>Input Address</label><br>
+    <input type="text" class="inputAddress" />
+    <p class="alertAddress" style="display: none">Alamat harus diisi</p> <!--style="display: none" ini adalah CSS, tapi bisa dimasukkan di HTML-->
+
+    <hr>
+
+    <!--Blur Event-->
+    <h3>Blur Event</h3>
+    <label>Input Address</label><br>
+    <input type="text" class="inputAddressBlur" />
+    <p class="alertAddressBlur" style="display: none">Alamat harus diisi</p> <!--style="display: none" ini adalah CSS, tapi bisa dimasukkan di HTML-->
+
+    <hr> 
+
+    <!--Event Data-->
+    <h3>Event Data</h3>
+    <ul>
+        <li>List 1</li>
+        <li>List 2</li>
+        <li>List 3</li>
+        <li>List 4</li>
+        <li>List 5</li>
+    </ul>
+
+    <hr> 
+
+    <!--Mouse Position-->
+    <h4>Mouse Position: <span class="pointerCount"></span></h4>
+
+    <hr>
+
+    <!--Prevent Default-->
+    <h3>Prevent Default</h3>
+    <a href="http://google.com" class="link-disabled">Link to Google</a>
+
+    <hr>
+
+    <button class="show">Show</button>
+    <button class="hide">Hide</button>
+    <p class="text3">Text 3</p>
+
+    <hr>
+
+    <button class="toggle">Action</button>
+    <p class="text4">Text 4</p>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script><!--jQuery-->
     <script src="index.js"></script> <!--harus dibawah jQuery-->
